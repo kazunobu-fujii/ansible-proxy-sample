@@ -1,0 +1,6 @@
+Host 192.168.33.20
+  Hostname 192.168.33.20
+  User aworker
+  UserKnownHostsFile /dev/null
+  StrictHostKeyChecking no
+  ProxyCommand ssh -o UserKnownHostsFile=/dev/null -o StrictHostKeyChecking=no -o IdentityFile=./.vagrant/machines/front/virtualbox/private_key -W %h:%p vagrant@192.168.33.10

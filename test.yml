@@ -1,0 +1,10 @@
+---
+- hosts: all
+  sudo: no
+  tasks:
+    - name: get hostname
+      shell: echo `hostname`
+      register: hname
+
+    - name: print hostname
+      debug: msg={{ hname.stdout }}
